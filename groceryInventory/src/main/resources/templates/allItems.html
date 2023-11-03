@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Entire Inventory</title>
+</head>
+<body>
+
+<h2>Grocery Store</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+
+    <tr th:each="${Item}">
+        <th th:text="{Item.Id}"></th>
+        <th th:text="{Item.name}"></th>
+        <th th:text="{Item.price}"></th>
+        <th th:text="{Item.quantity}"></th>
+    </tr>
+</table>
+
+<a href="addItem.html">Add Item</a>
+
+</body>
+</html>

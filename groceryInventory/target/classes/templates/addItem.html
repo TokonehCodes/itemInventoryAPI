@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding Inventory</title>
+</head>
+<body>
+<h1>Please fill in item details</h1>
+<form action="newItem" method="post">
+    <pre>
+    Id: <input type="text" name="Id"/>
+    Name: <input type="text" name="name"/>
+    Price: <input type="text" name="price"/>
+    Quantity: <input type="text" name="quantity"/>
+
+    <input type = submit value="save"/>
+    </pre>
+</form>
+
+<a href="viewItems">View All Items</a>
+
+</body>
+</html>
